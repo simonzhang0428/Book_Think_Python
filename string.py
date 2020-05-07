@@ -88,3 +88,15 @@ def count(word, letter):
 
 print(count('hello', 'l'))
 print(count('hello', 'H'))
+
+
+# A method call is called an invocation
+word = 'banana'
+print(word.upper()) # not change the original word
+print(word)
+print(word.find('a'))
+print(word.find('na'))
+print(word.find('na', 3)) # 3 is the start index
+
+name = 'bob'
+print(name.find('b', 1, 2)) # 1 is start, 2 is end

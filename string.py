@@ -1,5 +1,8 @@
+# coding: utf-8
 # string practice
 # 05/05/2020
+
+
 
 fruit = 'banana'
 letter = fruit[0]
@@ -100,3 +103,53 @@ print(word.find('na', 3)) # 3 is the start index
 
 name = 'bob'
 print(name.find('b', 1, 2)) # 1 is start, 2 is end
+
+# in operator
+def in_both(word1, word2):
+    for letter in word1:
+        if letter in word2:
+            print(letter)
+
+in_both('apples', 'oranges')
+
+# check whether given two words are reverse
+def is_reverse(word1, word2):
+    if len(word1) != len(word2):
+        return False
+
+    i = 0
+    j = len(word2) - 1
+
+    while i < len(word1):
+        if word1[i] != word2[j]:
+            return False
+        i = i + 1
+        j = j - 1
+    return True
+
+print(is_reverse('hello', 'olleh'))
+print(is_reverse('ef', 'fe'))
+
+# string default count method
+print(name, name.count('b'))
+
+# A step size of -1 goes through the word backwards,
+# so the slice [::-1] generates a reversed string
+# A palindrome is a word that is spelled the same backward
+# and forward, like “noon” and “redivider”.
+# Recursively, a word is a palindrome if the first and last letters are the same
+# and the middle is a palindrome.
+
+def first(word): return word[0]
+def last(word): return word[-1]
+def middle(word): return word[1:-1]
+
+def is_palinfrome(word):
+    if len(word) <= 1:
+        return True
+    if first(word) != last(word):
+        return False
+    return is_palinfrome(middle(word))
+
+print(is_palinfrome('allen'))
+print(is_palinfrome('bob'))

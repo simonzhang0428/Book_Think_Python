@@ -1,47 +1,58 @@
+from turtle import *
 import turtle
 import math
 from math import *
 
 bob = turtle.Turtle()
 
-
-# print(bob)
-# for i in range(4):
-#     bob.fd(100)
-#     bob.lt(90)
-# turtle.mainloop()
+# first write a small program with NO function definition
+for i in range(4):
+    bob.fd(100)
+    bob.lt(90)
 
 
-# def square(t):
-#     print(t)
-#     for side in range(4):
-#         t.fd(100)
-#         t.lt(90)
-#
-#
+# Encapsulation
+# similar pieces in a function
+def square(t):
+    for side in range(4):
+        t.fd(100)
+        t.lt(90)
+
+
 # square(bob)
 
 
-# def square(t, length):
-#     for side in range(4):
-#         t.fd(length)
-#         t.lt(90)
-#
-#
+# Generalization
+# function add parameter
+def square(t, length):
+    for side in range(4):
+        t.fd(length)
+        t.lt(90)
+
+
 # square(bob, 100)
 
 
-def polygon(t, length, n):
+def polygon(t, n, length):
     for side in range(n):
+        angle = 360 / n
         t.fd(length)
-        t.lt(360 / n)
+        t.lt(angle)
 
 
-# polygon(bob, 100, 6)
+# keyword argument, include the parameter name as "keyword"
+# polygon(bob, n=6, length=100)
+
+
 def circle(t, r):
-    polygon(t, 2 * pi * r / 100, 100)
+    circumference = 2 * pi * r
+    n = int(circumference / 3) + 1
+    length = circumference / n
+    polygon(t, n, length)
 
 
+# Refactoring
+# rearranging a program to improve interfaces and facilitate code reuse
 def polyline(t, n, length, angle):
     """Draws n line segments.
 
@@ -55,6 +66,18 @@ def polyline(t, n, length, angle):
         t.lt(angle)
 
 
+def polygon2(t, n, length):
+    angle = 360 / n
+    polyline(t, n, length, angle)
+
+
+# Docstring / Interface
+# It is terse, but it contains the essential information
+# someone would need to use this function.
+# It explains concisely what the function does
+# (without getting into the details of how it does it).
+# It explains what effect each parameter has on the behavior of the function
+# and what type each parameter should be (if it is not obvious).
 def arc(t, r, angle):
     """Draws an arc with the given radius and angle.
 
@@ -74,6 +97,56 @@ def arc(t, r, angle):
     t.rt(step_angle / 2)
 
 
+def circle2(t, r):
+    arc(t, r, 360)
+
+
 # circle(bob, 100)
-arc(bob, 100, 180)
+# arc(bob, 100, 180)
+
+def petal(t, r, angle):
+    """Draws a petal using two arcs.
+
+    t: Turtle
+    r: radius of the arcs
+    angle: angle (degrees) that subtends the arcs
+    """
+    for i in range(2):
+        arc(t, r, angle)
+        t.lt(180 - angle)
+
+
+def flower(t, n, r, angle):
+    """Draws a flower with n petals.
+
+    t: Turtle
+    n: number of petals
+    r: radius of the arcs
+    angle: angle (degrees) that subtends the arcs
+    """
+    for i in range(n):
+        petal(t, r, angle)
+        t.lt(360.0 / n)
+
+
+def move(t, length):
+    """Move Turtle (t) forward (length) units without leaving a trail.
+    Leaves the pen down.
+    """
+    t.pu()
+    t.fd(length)
+    t.pd()
+
+
+# draw a sequence of three flowers, as shown in the book.
+move(bob, -100)
+flower(bob, 7, 60.0, 60.0)
+
+move(bob, 100)
+flower(bob, 10, 40.0, 80.0)
+
+move(bob, 100)
+flower(bob, 20, 140.0, 20.0)
+
+bob.hideturtle()
 turtle.mainloop()

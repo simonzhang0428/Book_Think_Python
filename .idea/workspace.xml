@@ -27,7 +27,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de6be70c-ca2b-4cb5-9543-9bd131b4aef5" name="Default Changelist" comment="function inside function">
-      <change afterPath="$PROJECT_DIR$/conditon_recursion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/jingping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/File.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emma.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/word_histogram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +62,33 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.conditon_recursion">
+  <component name="RunManager" selected="Python.word_histogram">
+    <configuration name="File" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Book_Think_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/File.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="conditon_recursion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Book_Think_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,8 +155,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="word_histogram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Book_Think_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word_histogram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.function" />
+      <item itemvalue="Python.conditon_recursion" />
+      <item itemvalue="Python.File" />
+      <item itemvalue="Python.interface_design" />
+      <item itemvalue="Python.word_histogram" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.word_histogram" />
+        <item itemvalue="Python.File" />
         <item itemvalue="Python.conditon_recursion" />
         <item itemvalue="Python.interface_design" />
       </list>
@@ -150,6 +209,9 @@
       <workItem from="1589267320682" duration="2874000" />
       <workItem from="1589435716590" duration="3593000" />
       <workItem from="1589509968657" duration="2821000" />
+      <workItem from="1590018376632" duration="17000" />
+      <workItem from="1590018415221" duration="193000" />
+      <workItem from="1590688462903" duration="6618000" />
     </task>
     <task id="LOCAL-00001" summary="function inside function">
       <created>1589167925123</created>
@@ -197,10 +259,11 @@
       <screen x="0" y="23" width="1792" height="1043" />
     </state>
     <state x="1319" y="414" key="#Notifications/0.23.1792.1043@0.23.1792.1043" timestamp="1589436297347" />
-    <state x="496" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589163648413">
-      <screen x="0" y="23" width="1792" height="1042" />
+    <state x="478" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590688671278">
+      <screen x="0" y="23" width="1792" height="1043" />
     </state>
     <state x="496" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1042@0.23.1792.1042" timestamp="1589163648413" />
+    <state x="478" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1043@0.23.1792.1043" timestamp="1590688671278" />
     <state x="1036" y="159" key="#function" timestamp="1589163620717">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
@@ -210,29 +273,29 @@
       <screen x="0" y="23" width="1792" height="1043" />
     </state>
     <state x="1099" y="159" key="#interface_design/0.23.1792.1043@0.23.1792.1043" timestamp="1589267540252" />
-    <state width="669" height="185" key="GridCell.Tab.0.bottom" timestamp="1589525065895">
+    <state width="669" height="388" key="GridCell.Tab.0.bottom" timestamp="1590696437952">
       <screen x="0" y="23" width="1792" height="1043" />
     </state>
     <state width="857" height="285" key="GridCell.Tab.0.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1589168135043" />
-    <state width="669" height="185" key="GridCell.Tab.0.bottom/0.23.1792.1043@0.23.1792.1043" timestamp="1589525065895" />
+    <state width="669" height="388" key="GridCell.Tab.0.bottom/0.23.1792.1043@0.23.1792.1043" timestamp="1590696437952" />
     <state width="574" height="923" key="GridCell.Tab.0.bottom/0.23.1792.1044@0.23.1792.1044" timestamp="1589270040208" />
-    <state width="669" height="185" key="GridCell.Tab.0.center" timestamp="1589525065895">
+    <state width="669" height="388" key="GridCell.Tab.0.center" timestamp="1590696437951">
       <screen x="0" y="23" width="1792" height="1043" />
     </state>
     <state width="857" height="285" key="GridCell.Tab.0.center/0.23.1792.1042@0.23.1792.1042" timestamp="1589168135042" />
-    <state width="669" height="185" key="GridCell.Tab.0.center/0.23.1792.1043@0.23.1792.1043" timestamp="1589525065895" />
+    <state width="669" height="388" key="GridCell.Tab.0.center/0.23.1792.1043@0.23.1792.1043" timestamp="1590696437951" />
     <state width="574" height="923" key="GridCell.Tab.0.center/0.23.1792.1044@0.23.1792.1044" timestamp="1589270040207" />
-    <state width="669" height="185" key="GridCell.Tab.0.left" timestamp="1589525065895">
+    <state width="669" height="388" key="GridCell.Tab.0.left" timestamp="1590696437951">
       <screen x="0" y="23" width="1792" height="1043" />
     </state>
     <state width="857" height="285" key="GridCell.Tab.0.left/0.23.1792.1042@0.23.1792.1042" timestamp="1589168135042" />
-    <state width="669" height="185" key="GridCell.Tab.0.left/0.23.1792.1043@0.23.1792.1043" timestamp="1589525065895" />
+    <state width="669" height="388" key="GridCell.Tab.0.left/0.23.1792.1043@0.23.1792.1043" timestamp="1590696437951" />
     <state width="574" height="923" key="GridCell.Tab.0.left/0.23.1792.1044@0.23.1792.1044" timestamp="1589270040207" />
-    <state width="669" height="185" key="GridCell.Tab.0.right" timestamp="1589525065895">
+    <state width="669" height="388" key="GridCell.Tab.0.right" timestamp="1590696437951">
       <screen x="0" y="23" width="1792" height="1043" />
     </state>
     <state width="857" height="285" key="GridCell.Tab.0.right/0.23.1792.1042@0.23.1792.1042" timestamp="1589168135042" />
-    <state width="669" height="185" key="GridCell.Tab.0.right/0.23.1792.1043@0.23.1792.1043" timestamp="1589525065895" />
+    <state width="669" height="388" key="GridCell.Tab.0.right/0.23.1792.1043@0.23.1792.1043" timestamp="1590696437951" />
     <state width="574" height="923" key="GridCell.Tab.0.right/0.23.1792.1044@0.23.1792.1044" timestamp="1589270040208" />
     <state x="659" y="67" key="SettingsEditor" timestamp="1589163486353">
       <screen x="0" y="23" width="1792" height="1043" />
@@ -254,6 +317,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Book_Think_Python$conditon_recursion.coverage" NAME="conditon_recursion Coverage Results" MODIFIED="1589512460643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Book_Think_Python$interface_design.coverage" NAME="interface_design Coverage Results" MODIFIED="1589510080911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Book_Think_Python$word_histogram.coverage" NAME="word_histogram Coverage Results" MODIFIED="1590696649893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Book_Think_Python$File.coverage" NAME="File Coverage Results" MODIFIED="1590695446936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Book_Think_Python$function.coverage" NAME="function Coverage Results" MODIFIED="1589167682174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

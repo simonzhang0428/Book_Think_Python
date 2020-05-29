@@ -57,5 +57,26 @@ def reverse_lookup(d, v):
 print_dash()
 k = reverse_lookup(h, 6)
 print(k)
-k2 = reverse_lookup(h, 10)
-print(k2)
+print_dash()
+
+
+# k2 = reverse_lookup(h, 10)
+# print(k2)
+
+
+def invert_dict(d):
+    inverse = dict()
+    for key in d:
+        val = d[key]
+        if val not in inverse:
+            inverse[val] = [key]
+        else:
+            inverse[val].append(key)
+    return inverse
+
+
+hist = histogram('parrot')
+print_hist(hist)
+inverse = invert_dict(hist)
+print(inverse)
+print_hist(inverse)

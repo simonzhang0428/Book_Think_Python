@@ -14,6 +14,7 @@
 # input_string = "United State: 3000"
 # result = input_string.rsplit(":", 1)
 # print(result)
+import os
 
 
 def has_no_e(word):
@@ -73,6 +74,11 @@ def is_abecedarian3(word):
 
 
 fin = open('words.txt')
+cwd = os.getcwd()
+abspath = os.path.abspath('File.py')
+print(cwd)
+print(abspath)
+print(os.listdir(cwd))
 
 # for line in fin:
 #     word = line.strip()
@@ -115,7 +121,7 @@ count = 0
 for line in fin:
     word = line.strip()
     if is_abecedarian(word):
-        print(word)
+        # print(word)
         count += 1
 
 print('abecedarian word count is', count)

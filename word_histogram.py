@@ -1,3 +1,20 @@
+import random
+import string
+
+for i in range(10):
+    x = random.random()
+    print(x)
+
+for i in range(10):
+    x = random.randint(5, 10)
+    print(x)
+
+t = [1, 2, 3]
+for i in range(10):
+    x = random.choice(t)
+    print(x)
+
+
 def histogram1(s):
     d = dict()
     for c in s:
@@ -80,3 +97,79 @@ print_hist(hist)
 inverse = invert_dict(hist)
 print(inverse)
 print_hist(inverse)
+
+
+def process_file(filename):
+    hist = dict()
+    fp = open(filename)
+    for line in fp:
+        process_line(line, hist)
+    return hist
+
+
+def process_line(line, hist):
+    line = line.replace('-', ' ')
+    for word in line.split():
+        word = word.strip(string.punctuation + string.whitespace)
+        word = word.lower()
+        hist[word] = hist.get(word, 0) + 1
+
+
+def total_words(hist):
+    return sum(hist.values())
+
+
+def different_words(hist):
+    return len(hist)
+
+
+print(string.punctuation)  # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+hist = process_file('emma.txt')
+# print_hist(hist)
+print('Total number of words: ', total_words(hist))
+print('Number of different words: ', different_words(hist))
+
+
+def most_common(hist):
+    t = []
+    for key, value in hist.items():
+        t.append((value, key))
+
+    t.sort(reverse=True)
+    return t
+
+
+def print_most_common(hist, num=10):  # default optional parameter is  10
+    t = most_common(hist)
+    print('The most common words are: ')
+    for freq, word in t[:num]:
+        print(word, freq, sep='\t')
+
+
+print_most_common(hist, 20)  # override the optional parameter
+
+
+def subtract(d1, d2):
+    res = dict()
+    for key in d1:
+        if key not in d2:
+            res[key] = None
+    return res
+
+
+def subtract2(d1, d2):
+    return set(d1) - set(d2)
+
+words = process_file('words.txt')
+diff = subtract(hist, words)
+
+print('Words in book that are not in the word list:')
+for word in diff:
+    print(word, end=' ')
+print()
+
+
+diff2 = subtract2(hist, words)
+print('Words in book that are not in the word list:')
+for word in diff2:
+    print(word, end=' ')

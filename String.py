@@ -3,7 +3,8 @@
 # 05/05/2020
 
 
-
+s = '1 2\t\t 3\n 4'
+print(repr(s))
 fruit = 'banana'
 letter = fruit[0]
 l = len(fruit)
@@ -30,6 +31,7 @@ while index < len(fruit):
 for letter in fruit:
     print(letter)
 
+
 # given a string, print backward
 def traversal_backward(input_string):
     index = len(input_string) - 1
@@ -38,10 +40,9 @@ def traversal_backward(input_string):
         print(letter)
         index = index - 1
 
+
 traversal_backward('123')
 traversal_backward('hello')
-
-
 
 # The following example shows how to use concatenation (string addition)
 # and a for loop to generate an abecedarian series
@@ -57,6 +58,7 @@ for letter in prefixes:
         print(letter + 'u' + suffix)
     print(letter + suffix)
 
+
 # find the letter in word, return index
 def find(word, letter):
     index = 0
@@ -66,8 +68,10 @@ def find(word, letter):
         index = index + 1
     return -1
 
+
 print(find('hello', 'h'))
 print(find('hello', 'H'))
+
 
 # given the index in word where it should start looking
 def find(word, letter, start_pos):
@@ -78,8 +82,10 @@ def find(word, letter, start_pos):
         index = index + 1
     return -1
 
+
 print(find('hello', 'h', 1))
 print(find('hello', 'o', 3))
+
 
 # Count the letter appear times in the given word
 def count(word, letter):
@@ -89,20 +95,21 @@ def count(word, letter):
             counter = counter + 1
     return counter
 
+
 print(count('hello', 'l'))
 print(count('hello', 'H'))
 
-
 # A method call is called an invocation
 word = 'banana'
-print(word.upper()) # not change the original word
+print(word.upper())  # not change the original word
 print(word)
 print(word.find('a'))
 print(word.find('na'))
-print(word.find('na', 3)) # 3 is the start index
+print(word.find('na', 3))  # 3 is the start index
 
 name = 'bob'
-print(name.find('b', 1, 2)) # 1 is start, 2 is end
+print(name.find('b', 1, 2))  # 1 is start, 2 is end
+
 
 # in operator
 def in_both(word1, word2):
@@ -110,7 +117,9 @@ def in_both(word1, word2):
         if letter in word2:
             print(letter)
 
+
 in_both('apples', 'oranges')
+
 
 # check whether given two words are reverse
 def is_reverse(word1, word2):
@@ -127,11 +136,13 @@ def is_reverse(word1, word2):
         j = j - 1
     return True
 
+
 print(is_reverse('hello', 'olleh'))
 print(is_reverse('ef', 'fe'))
 
 # string default count method
 print(name, name.count('b'))
+
 
 # A step size of -1 goes through the word backwards,
 # so the slice [::-1] generates a reversed string
@@ -141,8 +152,13 @@ print(name, name.count('b'))
 # and the middle is a palindrome.
 
 def first(word): return word[0]
+
+
 def last(word): return word[-1]
+
+
 def middle(word): return word[1:-1]
+
 
 def is_palinfrome(word):
     if len(word) <= 1:
@@ -151,8 +167,10 @@ def is_palinfrome(word):
         return False
     return is_palinfrome(middle(word))
 
+
 def is_palinfrome2(word):
     return word == word[::-1]
+
 
 print(is_palinfrome2('allen'))
 print(is_palinfrome2('bob'))

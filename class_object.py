@@ -5,14 +5,25 @@ from math import sqrt
 class Point:
     """Represent a point in 2-D space."""
 
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return '(%g, %g)' % (self.x, self.y)
+
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
+
 
 print(Point)  # <class '__main__.Point'>
 
 blank = Point()  # instantiation, instance of class
 print(blank)  # <__main__.Point object at 0x103f869a0>
 
-blank.x = 3.0
-blank.y = 4.0
+p1 = Point(3, 4)
+p2 = Point(2, 2)
+print(p2 + p1)
 
 
 def print_point(p):
@@ -20,6 +31,7 @@ def print_point(p):
 
 
 print_point(blank)
+print(blank)
 
 
 def distance_between_points(p1, p2):
@@ -37,6 +49,11 @@ class Rectangle:
 
     attributes: width, height, corner.
     """
+
+    def __init__(self, width=0, height=0, corner=Point()):
+        self.width = width
+        self.height = height
+        self.corner = Point()
 
 
 box = Rectangle()
